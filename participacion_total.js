@@ -34,7 +34,7 @@ const getVotos = async () => {
 
       resultadosBody.innerHTML = `
         <tr class="titulo_tabla">
-          <td>DEPARTAMENTO</td>
+          <td>cambiar</td>
           <td>TOTAL ASISTENTES</td>
           <td>% TOTAL ASISTENTES</td>
           <td>TOTAL AUSENTES</td>
@@ -57,7 +57,7 @@ const getVotos = async () => {
         totalEH += eh;
 
         const row = document.createElement("tr");
-        row.setAttribute("onclick", `location.href='./participacion_total.html?id=nacional/${dep.DPD}'`);
+        row.setAttribute("onclick", `location.href='./participacion_total.html?id=${id}/${dep.DPD}'`);
         row.setAttribute("onmouseover", "this.style.cursor='pointer'; this.style.color='grey'");
         row.setAttribute("onmouseout", "this.style.color='black'");
         row.setAttribute("style", "cursor: pointer; color: black;");
